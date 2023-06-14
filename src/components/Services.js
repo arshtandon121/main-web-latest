@@ -21,7 +21,7 @@ export default function Services() {
       heading: 'Demand Generation',
       description: `<li>LinkedIn & Web Strategy aligned with Marketing Goals</li>
       <li>Analytics & conversion optimization (LinkedIn & Web)</li>
-      <li>LinkedIn Content creation & Content calendar</li>`
+      <li>LinkedIn Content creation & Content calendar`
     },
     {
       heading: 'Personal Branding',

@@ -67,19 +67,22 @@ body{
 }
 
 /* Responsive styles */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
+  }
+  .navlogo{
+  margin: auto;
   }
 
   .nav-items {
     flex-direction: row;
-    align-items: flex-start;
+    margin: auto;
     padding: 0rem 0px 0px 0px;
   }
 
   .nav-item {
-    margin-right: 0rem;
+    margin-right: 1rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
   }

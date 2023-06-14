@@ -326,12 +326,32 @@ height: 5rem;
   justify-content: center;
   align-items: center;
   font-size: 34px;
-  animation: slide-in 20s linear infinite;
+  animation: slide-in-out 3s linear infinite;
   width: 100%;
   text-align: center;
   padding: 1px;
   overflow-x: hidden;
+  margin-left: -6rem;
 }
+
+@keyframes slide-in-out {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 .logo {
   display: flex;
@@ -362,17 +382,20 @@ height: 5rem;
 @media screen and (max-width: 768px) {
   .carousel-heading {
     font-size: 3rem;
+    margin-top: 10rem;
   }
+
   .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 34px;
-    animation: slide-in 20s linear infinite;
+    animation: slide-in-out 3s linear infinite;
     width: 100%;
     text-align: center;
     padding: 1px;
     overflow-x: hidden;
+    margin-left: -1rem;
   }
 
   .logo {
@@ -583,6 +606,8 @@ height: 5rem;
     
       .credible-card {
         height: auto;
+        border: none;
+        border-bottom: 2px solid #3f2f5a;
       }
   
     .credible-card-heading {
@@ -1180,7 +1205,7 @@ height: 5rem;
 .footer {
     width:100%;
     background-color: #3f2f5a;
-    padding: 20px;
+    
     font-size: 3rem;
     color: black;
     margin-top: 2rem;
@@ -1300,6 +1325,7 @@ height: 5rem;
     .other-links,
     .footer-contacts {
       margin-top: 20px;
+      text-align: center;
     }
   
     .footer-contacts {
@@ -1311,6 +1337,7 @@ height: 5rem;
     .footer {
         margin-top: 2rem;
       font-size: 2rem;
+      padding: 0;
     }
   
     .footer-logo img {
@@ -1321,6 +1348,7 @@ height: 5rem;
     .footer-socials a,
     .other-links a {
       font-size: 2rem;
+      text-align: center;
     }
   
     .link-heading {
@@ -1329,6 +1357,7 @@ height: 5rem;
   
     .footer-cta {
       font-size: 1.8rem;
+      margin-left: -16rem;
     }
   
     .phonenumber,
@@ -1367,6 +1396,13 @@ height: 5rem;
     margin-bottom: 2rem;
     
     
+  }
+
+  @media screen and (max-width: 800px) {
+    .containerabout{
+      font-size: 2rem;
+      height: auto;
+    }
   }
   
   .container span{
