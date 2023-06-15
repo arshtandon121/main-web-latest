@@ -3,9 +3,13 @@ import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
-    <div>
+    <>
       <Navbar/>
+    <div>
       <div className="outercontainer">
+        <div className="mid">
+
+       
       <div className="containerabout">
         Welcome to <span>Dyota</span>, your trusted partner in digital marketing! We are
         dedicated to helping businesses thrive in the digital age by providing
@@ -20,9 +24,10 @@ export default function About() {
         positively impact your bottom line. Contact Dyota today to schedule a
         consultation and unlock your online potential.
       </div>
-
+      </div>
       </div>
       
     </div>
+    </>
   );
 }
